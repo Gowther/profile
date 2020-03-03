@@ -106,7 +106,7 @@ Proxy Group:
 # 规则
 Rule:
 # Unbreak
-# > Google
+- DOMAIN-SUFFIX,hddolby.com,DIRECT
 - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
 - DOMAIN,dl.google.com,DIRECT
 - DOMAIN,mtalk.google.com,DIRECT
