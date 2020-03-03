@@ -88,7 +88,7 @@ proxy-provider:
     Dler:
         type: http
         path: ./dler.yaml
-        url: https://dler.cloud/subscribe/?=ss&list=clash
+        url: https://dler.cloud/subscribe/?protocols=ss&list=clash
         interval: 3600
         health-check:
             enable: true
