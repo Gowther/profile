@@ -1,4 +1,4 @@
-hostname = trade-acs.m.taobao.com, amdc.m.taobao.com, api.m.jd.com, app.bilibili.com,oauth.secure.pixiv.net
+hostname = trade-acs.m.taobao.com, amdc.m.taobao.com, api.m.jd.com, app.bilibili.com, oauth.secure.pixiv.net
 
 # JS
 # TB 历史价格 (By yichahucha)
