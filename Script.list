@@ -1,0 +1,15 @@
+hostname = trade-acs.m.taobao.com, amdc.m.taobao.com, api.m.jd.com, app.bilibili.com,oauth.secure.pixiv.net
+
+# JS
+# TB 历史价格 (By yichahucha)
+^https?://.+/amdc/mobileDispatch url script-request-body tb_price_lite.js
+^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body tb_price_lite.js
+# JD 历史价格 (By yichahucha)
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body jd_price_lite.js
+# 哔哩哔哩动画去广告 (By onewayticket255)
+^https://app.bilibili.com/x/v2/account/mine\?access_key url script-response-body biliAccount.js
+^https://app.bilibili.com/x/v2/feed/index\?access_key url script-response-body biliFeed.js
+^https://app.bilibili.com/x/resource/show/tab\?access_key url script-response-body biliTab.js
+^https://app.bilibili.com/x/v2/view\?access_key url script-response-body biliViewRelate.js
+# Pixiv去广告 (By onewayticket255)
+^https://oauth.secure.pixiv.net/auth/token url script-response-body pixivPre.js
