@@ -1,4 +1,4 @@
-hostname = www.zhihu.com, trade-acs.m.taobao.com, amdc.m.taobao.com, api.m.jd.com, app.bilibili.com, oauth.secure.pixiv.net
+hostname = trade-acs.m.taobao.com, amdc.m.taobao.com, api.m.jd.com, app.bilibili.com, oauth.secure.pixiv.net
 
 # JS
 # TB 历史价格 (By yichahucha)
@@ -13,4 +13,4 @@ hostname = www.zhihu.com, trade-acs.m.taobao.com, amdc.m.taobao.com, api.m.jd.co
 # Pixiv去广告 (By onewayticket255)
 ^https://oauth.secure.pixiv.net/auth/token url script-response-body pixivPre.js
 # zhihu
-^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
+#^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
