@@ -1,2 +1,2 @@
-# JD 历史价格 @yichahucha
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body jd_price_lite.js
+# JD 历史价格@yichahucha
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body jd_price.js
