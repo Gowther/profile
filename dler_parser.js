@@ -12,6 +12,6 @@ if ($resource.link.match(/dler/g)) {
     l[i] = info[0] + info[1]
     $notify('info1','',l[i])
   }
-  let content = l.join('\n')
-  $done({content : content})
+  let resp = l.join('\n')
+  $done({content : resp})
 }
