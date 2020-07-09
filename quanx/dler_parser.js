@@ -1,5 +1,5 @@
 /**
- * @version 10
+ * @version 0.10
  * @author daryl
  * @fileoverview Example to parse the resource to the format of Quantumult X.
  * 
