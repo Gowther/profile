@@ -3,7 +3,7 @@
  * @author daryl
  *
  * @supported http://ip-api.com/json
- * @example https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
+ * @sample https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
  */
 
 if ($response.statusCode !== 200) $done(Null)
