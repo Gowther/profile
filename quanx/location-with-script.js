@@ -13,6 +13,6 @@ const obj = JSON.parse(body)
 let title = obj['city']
 let subtitle = obj['isp']
 let ip = obj['query']
-let description = obj['regionName'] + '\n' + obj['timezone'] + '\n' + obj['as']
+let description = obj['regionName'] + '\n' + obj['as'] + '\n' + obj['timezone']
 
 $done({title, subtitle, ip, description});
