@@ -1,7 +1,6 @@
 /**
- * @version 0.0.1
  * @author daryl
- *
+ * @version 0.1
  * @supported http://ip-api.com/json
  * @sample https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
  */
