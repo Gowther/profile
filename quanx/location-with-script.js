@@ -13,6 +13,6 @@ let title = obj['city']
 let subtitle = obj['isp']
 let ip = obj['query']
 let description = obj['regionName'] + '\n' + obj['as'] + '\n' + obj['timezone']
-subtitle = subtitle.replace('Hong Kong Telecommunications (HKT)', 'H.K.T.')
+subtitle = subtitle.replace('Hong Kong Telecommunications (HKT)', 'HKT')
 
 $done({title, subtitle, ip, description});
