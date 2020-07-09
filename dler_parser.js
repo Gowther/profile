@@ -1,5 +1,5 @@
 /**
- * 3
+ * 4
  * @author daryl
  * @fileoverview Example to parse the resource to the format of Quantumult X.
  * 
@@ -28,6 +28,7 @@ if ($resource.link.match(/dler/g)) {
         info[1] = tag[0]
     }
     list[i] = info[0] + 'tag=' + info[1]
+    $notify(i,'',list[i])
   }
   let resp = list.join('\n')
   $notify('parser_dler','',resp)
