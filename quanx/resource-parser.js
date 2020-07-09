@@ -16,6 +16,8 @@
 // $done({error : "error description"});
 // $done({content : "the modified content"});
 
+if (!$resource.content.match(/tag/g))  $done(Null)
+
 if ($resource.link.match(/dler/g)) {
     let list = $resource.content.split(/\n/g)
     for (let i = 0; i < list.length; i++) {
