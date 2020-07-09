@@ -9,14 +9,9 @@ if ($response.statusCode !== 200) {
 
 const body = $response.body;
 const obj = JSON.parse(body);
-let title;
-if (obj['city']) {
-    title = obj['city'] + ', ' + obj['country_code']
-} else {
-    title = obj['country']
-}
-let subtitle = (obj['city'] + ' ' + obj['isp']).trim()
-let ip = obj['ip']
-let description = obj['country'] + '\n' + obj['region'] + '\n' + +obj['asn'] + ',' + obj['asn_organization'] + '\n' + obj['ipType']
+let title = obj['city'] + ', ' + obj['country']
+let subtitle = obj['org']
+let ip = obj['query']
+let description = obj['regionName'] + '\n' + obj['timezone'] + '\n' + obj['as']
 
 $done({title, subtitle, ip, description});
