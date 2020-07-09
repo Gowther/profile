@@ -1,5 +1,5 @@
 /**
- * @version 0.10
+ * @version 0.11
  * @author daryl
  * @fileoverview Example to parse the resource to the format of Quantumult X.
  * 
@@ -38,7 +38,10 @@ if ($resource.link.match(/dler/g)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(/tag/g)) {
             let info = list[i].split(/tag=/g)
-            info[1] = info[1].replace(/-/g, ' ').replace(/新加坡/g, '狮城').replace(/〖多入口中转〗/g, ' ').concat(' CDN')
+            info[1] = info[1].replace(/-/g, ' ').replace(/新加坡/g, '狮城')
+            if (info[1].match(/〖多入口中转〗/g)) {
+                  info[1] = info[1].replace(/〖多入口中转〗/g, ' ').concat(' CDN')
+            }
             list[i] = info[0] + 'tag=' + info[1]
         }
     }
