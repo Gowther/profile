@@ -33,4 +33,15 @@ if ($resource.link.match(/dler/g)) {
     }
     let resp = list.join('\n')
     $done({content: resp})
+} else if ($resource.link.match(/zeichuan/g)) {
+    let list = $resource.content.split(/\n/g)
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].match(/tag/g)) {
+            let info = list[i].split(/tag=/g)
+            info[1] = info[1].replace(/-/g, ' ').replace(/新加坡/g, '狮城').replace(/〖多入口中转〗/g, ' ').concat(' CDN')
+            list[i] = info[0] + 'tag=' + info[1]
+        }
+    }
+    let resp = list.join('\n')
+    $done({content: resp})
 }
