@@ -1,9 +1,6 @@
 /**
  * @author daryl
  * @version 0.11
- * 
- * @fileoverview Example to parse the resource to the format of Quantumult X.
- * 
  * @supported Quantumult X (v1.0.8-build253)
  */
 
