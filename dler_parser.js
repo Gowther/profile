@@ -28,8 +28,8 @@ if ($resource.link.match(/dler/g)) {
         info[1] = tag[0]
     }
     l[i] = info[0] + 'tag=' + info[1]
-    $notify('info1','',l[i])
   }
   let resp = l.join('\n')
+  $notify('parser_dler','',resp)
   $done({content : resp})
 }
