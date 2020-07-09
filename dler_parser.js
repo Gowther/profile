@@ -17,8 +17,10 @@
 
 if ($resource.link.match(/dler/g)) {
   let l = $resource.content.split(/\n/g)
+  $notify('T1','',list[0])
   for (let i = 0; i < l.length; i++) {
     let o = l[i].split(/tag=/g)
+    $notify('T1','',list[0])
     let array = o[1].replace(/新加坡/g, '狮城').replace(/高级|标准/g, '').split('>')
     if (array.length === 2) {
         o[1] = array[0] + '>' + array[1].substring(3)
@@ -29,5 +31,5 @@ if ($resource.link.match(/dler/g)) {
   }
   
   $notify('T1','',list[0])
-  $done({error:'1'});
+  $done({error:'2'});
 }
