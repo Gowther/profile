@@ -14,9 +14,11 @@
 // $done({content : "the modified content"});
 
 if (!$resource.content.match(/tag/g))  $done(Null)
+const sub_dler = /dler\.cloud\/subscribe/g
+const sub_zeichuan = /zeichuan\.vip\/link/g
 
 let list = $resource.content.split(/\n/g)
-if ($resource.link.match(/dler/g)) {
+if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(/tag/g)) {
             let info = list[i].split(/tag=/g)
@@ -31,7 +33,7 @@ if ($resource.link.match(/dler/g)) {
     }
     let resp = list.join('\n')
     $done({content: resp})
-} else if ($resource.link.match(/zeichuan/g)) {
+} else if ($resource.link.match(sub_zeichuan)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(/tag/g)) {
             let info = list[i].split(/tag=/g)
