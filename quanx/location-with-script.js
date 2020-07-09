@@ -10,8 +10,8 @@ if ($response.statusCode !== 200) {
 
 const body = $response.body
 const obj = JSON.parse(body)
-let title = obj['city'] + ', ' + obj['country']
-let subtitle = obj['org']
+let title = obj['city']
+let subtitle = obj['isp']
 let ip = obj['query']
 let description = obj['regionName'] + '\n' + obj['timezone'] + '\n' + obj['as']
 
