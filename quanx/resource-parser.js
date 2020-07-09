@@ -1,6 +1,6 @@
 /**
  * @author daryl
- * @version 0.11
+ * @version 0.12
  * @supported Quantumult X (v1.0.8-build253)
  */
 
