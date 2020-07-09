@@ -1,5 +1,5 @@
 /**
- * 6
+ * 8
  * @author daryl
  * @fileoverview Example to parse the resource to the format of Quantumult X.
  * 
@@ -18,20 +18,22 @@
 
 
 if ($resource.link.match(/dler/g)) {
-  let list = $resource.content.split(/\n/g)
-  $notify('list','',list)
-  for (let i = 0; i < list.length; i++) {
-    let info = list[i].split(/tag=/g)
-    let tag = info[1].replace(/新加坡/g, '狮城').replace(/高级|标准/g, '').split('>')
-    if (tag.length === 2) {
-        info[1] = tag[0] + '>' + tag[1].substring(3)
-    } else {
-        info[1] = tag[0]
+    let list = $resource.content.split(/\n/g)
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].trim) {
+            let info = list[i].split(/tag=/g)
+            let tag = info[1].replace(/新加坡/g, '狮城').replace(/高级|标准/g, '').split('>')
+            if (tag.length === 2) {
+                info[1] = tag[0] + '>' + tag[1].substring(3)
+            } else {
+                info[1] = tag[0]
+            }
+            list[i] = info[0] + 'tag=' + info[1]
+            $notify('list' + i, '', list[i])
+        }
     }
-    list[i] = info[0] + 'tag=' + info[1]
-  }
-  $notify('_list','',list)
-  let resp = list.join('\n')
-  $notify('parser_dler','',resp)
-  $done({content : resp})
+    $notify('_list', '', list)
+    let resp = list.join('\n')
+    $notify('parser_dler', '', resp)
+    $done({content: resp})
 }
