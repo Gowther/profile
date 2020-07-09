@@ -29,7 +29,6 @@ if ($resource.link.match(/dler/g)) {
                 info[1] = tag[0]
             }
             list[i] = info[0] + 'tag=' + info[1]
-            $notify('list' + i, '', list[i])
         }
     }
     $notify('_list', '', list)
