@@ -5,11 +5,11 @@
  */
 
 if ($response.statusCode !== 200) {
-    $done(Null);
+    $done(Null)
 }
 
-const body = $response.body;
-const obj = JSON.parse(body);
+const body = $response.body
+const obj = JSON.parse(body)
 let title = obj['city'] + ', ' + obj['country']
 let subtitle = obj['org']
 let ip = obj['query']
