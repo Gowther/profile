@@ -20,7 +20,7 @@
 if ($resource.link.match(/dler/g)) {
     let list = $resource.content.split(/\n/g)
     for (let i = 0; i < list.length; i++) {
-        if (list[i].trim) {
+        if (list[i].match(/tag/g)) {
             let info = list[i].split(/tag=/g)
             let tag = info[1].replace(/新加坡/g, '狮城').replace(/高级|标准/g, '').split('>')
             if (tag.length === 2) {
