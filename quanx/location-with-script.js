@@ -1,5 +1,4 @@
 /**
- *
  * @supportURL http://ip-api.com/json
  * @sample https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
  */
