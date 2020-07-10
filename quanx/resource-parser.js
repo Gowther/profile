@@ -1,7 +1,7 @@
 /**
  * 
  * @author daryl
- * @version 0.12
+ * @version 0.13
  * 
  * @supported Quantumult X (v1.0.8-build253)
  */
@@ -16,10 +16,11 @@
 // $done({content : "the modified content"});
 
 if (!$resource.content.match(/tag/g)) $done(Null)
+
 const sub_dler = /dler\.cloud\/subscribe/g
 const sub_zeichuan = /zeichuan\.vip\/link/g
-
 let list = $resource.content.split(/\n/g)
+
 if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(/tag/g)) {
