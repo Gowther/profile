@@ -13,7 +13,7 @@ const obj = JSON.parse($response.body)
 let title = obj['city']
 let subtitle = obj['isp']
 let ip = obj['query']
-let description = obj['regionName'] + '\n' + obj['as'] + '\n' + obj['timezone']
+let description = obj['query'] + '\n' + obj['country'] + '\n' + obj['as'] + '\n' + obj['timezone']
 subtitle = subtitle.replace('Hong Kong Telecommunications (HKT)', 'HKT')
 
 $done({ title, subtitle, ip, description });
