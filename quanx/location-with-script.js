@@ -1,6 +1,8 @@
 /**
+ * 
  * @author daryl
- * @version 0.1
+ * @version 0.2
+ * 
  * @supported http://ip-api.com/json
  * @sample https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
  */
@@ -14,4 +16,4 @@ let ip = obj['query']
 let description = obj['regionName'] + '\n' + obj['as'] + '\n' + obj['timezone']
 subtitle = subtitle.replace('Hong Kong Telecommunications (HKT)', 'HKT')
 
-$done({title, subtitle, ip, description});
+$done({ title, subtitle, ip, description });
