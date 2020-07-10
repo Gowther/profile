@@ -1,6 +1,8 @@
 /**
+ * 
  * @author daryl
  * @version 0.12
+ * 
  * @supported Quantumult X (v1.0.8-build253)
  */
 
@@ -13,7 +15,7 @@
 // $done({error : "error description"});
 // $done({content : "the modified content"});
 
-if (!$resource.content.match(/tag/g))  $done(Null)
+if (!$resource.content.match(/tag/g)) $done(Null)
 const sub_dler = /dler\.cloud\/subscribe/g
 const sub_zeichuan = /zeichuan\.vip\/link/g
 
@@ -32,18 +34,18 @@ if ($resource.link.match(sub_dler)) {
         }
     }
     let resp = list.join('\n')
-    $done({content: resp})
+    $done({ content: resp })
 } else if ($resource.link.match(sub_zeichuan)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(/tag/g)) {
             let info = list[i].split(/tag=/g)
             info[1] = info[1].replace(/-/g, ' ').replace(/新加坡/g, '狮城')
             if (info[1].match(/〖多入口中转〗/g)) {
-                  info[1] = info[1].replace(/〖多入口中转〗/g, ' ').concat(' CDN')
+                info[1] = info[1].replace(/〖多入口中转〗/g, ' ').concat(' CDN')
             }
             list[i] = info[0] + 'tag=' + info[1]
         }
     }
     let resp = list.join('\n')
-    $done({content: resp})
+    $done({ content: resp })
 }
