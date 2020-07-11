@@ -37,17 +37,4 @@ if ($resource.link.match(sub_dler)) {
     }
     let resp = list.join('\n')
     $done({ content: resp })
-} else if ($resource.link.match(sub_zeichuan)) {
-    for (let i = 0; i < list.length; i++) {
-        if (list[i].match(reg_t)) {
-            let info = list[i].split(reg_t)
-            info[1] = info[1].replace(/-/g, ' ').replace(/新加坡/g, '狮城')
-            if (info[1].match(/〖多入口中转〗/g)) {
-                info[1] = info[1].replace(/〖多入口中转〗/g, ' ').concat(' CDN')
-            }
-            list[i] = info[0] + 'tag=' + info[1]
-        }
-    }
-    let resp = list.join('\n')
-    $done({ content: resp })
-}
+} 
