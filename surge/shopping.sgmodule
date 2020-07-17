@@ -1,4 +1,4 @@
-#!name=eval_script.js module
+#!name=Shopping
 
 [MITM]
 hostname = trade-acs.m.taobao.com,api.m.jd.com
