@@ -1,4 +1,5 @@
 #!name=Shopping
+#!desc=JD & TB Price history @yichahucha 
 
 [MITM]
 hostname = trade-acs.m.taobao.com,api.m.jd.com
