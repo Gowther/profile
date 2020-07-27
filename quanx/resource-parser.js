@@ -25,7 +25,7 @@ if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(reg_t)) {
             let info = list[i].split(reg_t)
-            let tag = info[1].replace(/高级|标准/g, '').replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split('>')
+            let tag = info[1].replace(/高级|标准/g, '').replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split('>', 1)
             if (tag.length === 2) {
                 info[1] = tag[0]
             } else {
