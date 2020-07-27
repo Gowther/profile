@@ -1,7 +1,7 @@
 /**
  * 
  * @author daryl
- * @version 0.14
+ * @version 0.15
  * 
  * @supported Quantumult X (v1.0.8-build253)
  */
@@ -18,7 +18,6 @@
 if (!$resource.content.match(/tag/g)) $done(Null)
 
 const sub_dler = /dler\.cloud\/subscribe/g
-const sub_zeichuan = /zeichuan\.vip\/link/g
 const reg_t = /tag=/g
 let list = $resource.content.split(/\n/g)
 
@@ -26,9 +25,9 @@ if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].match(reg_t)) {
             let info = list[i].split(reg_t)
-            let tag = info[1].replace(/新加坡/g, '狮城').replace(/高级|标准/g, '').split('>')
+            let tag = info[1].replace(/高级|标准/g, '').replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split('>')
             if (tag.length === 2) {
-                info[1] = tag[0] + '>' + tag[1].substring(3)
+                info[1] = tag[0]
             } else {
                 info[1] = tag[0]
             }
