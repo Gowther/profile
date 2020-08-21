@@ -1,7 +1,7 @@
 /**
  * 
  * @author srk24
- * @version 0.26
+ * @version 0.0.1
  * 
  * @supported Quantumult X (v1.0.8-build253)
  */
