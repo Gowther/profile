@@ -1,7 +1,7 @@
 /**
  * 
  * @author srk24
- * @version 0.25
+ * @version 0.26
  * 
  * @supported Quantumult X (v1.0.8-build253)
  */
@@ -23,7 +23,7 @@ if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].includes('tag=')) {
             let info = list[i].split(reg_t)
-            let tag = info[1].replace(/新加坡/g, '狮城').split(' - ', 1)
+            let tag = info[1].replace(/新加坡/g, '狮城').replace(/\+/g, '').split(' - ', 1)
             info[1] = tag[0]
             list[i] = info[0] + 'tag=' + info[1]
         }
