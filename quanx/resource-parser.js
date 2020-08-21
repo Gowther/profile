@@ -1,7 +1,7 @@
 /**
  * 
  * @author srk24
- * @version 0.21
+ * @version 0.22
  * 
  * @supported Quantumult X (v1.0.8-build253)
  */
@@ -23,8 +23,8 @@ if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
         let info = list[i].split(reg_t)
         let tag = info[1].replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split(' - ', 1)
-        $notify(tag)
         info[1] = tag[0]
+        $notify(info[1])
         list[i] = info[0] + 'tag=' + info[1]
     }
     let resp = list.join('\n')
