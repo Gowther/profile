@@ -21,14 +21,16 @@ let list = $resource.content.split(/\n/g)
 
 if ($resource.link.match(sub_dler)) {
     for (let i = 0; i < list.length; i++) {
-        let info = list[i].split(reg_t)
-        let tag = info[1].replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split(' - ', 1)
-        info[1] = tag[0]
-        list[i] = info[0] + 'tag=' + info[1]
-        $notify(i,'resp','resp')
+        if (list[i].includes('tag=')) {
+             $notify(i, 'resp', 'resp')
+            let info = list[i].split(reg_t)
+            let tag = info[1].replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split(' - ', 1)
+            info[1] = tag[0]
+            list[i] = info[0] + 'tag=' + info[1]
+        }
     }
-    $notify(list,'resp','resp')
+    $notify(list, 'resp', 'resp')
     let resp = list.join('\n')
-    $notify(resp,'resp','resp')
-    $done({content : resp})
+    $notify(resp, 'resp', 'resp')
+    $done({ content: resp })
 }
