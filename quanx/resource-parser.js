@@ -24,10 +24,9 @@ if ($resource.link.match(sub_dler)) {
         let info = list[i].split(reg_t)
         $notify(info)
         let tag = info[1].replace(/新加坡/g, 'Singapore').replace(/香港/g, 'Hong Kong').split(' - ', 1)
-        $notify(tag)
+       // $notify(tag)
         info[1] = tag[0]
         list[i] = info[0] + 'tag=' + info[1]
-        $notify(list[i])
     }
     let resp = list.join('\n')
     $done({content : resp})
