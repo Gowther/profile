@@ -1,5 +1,5 @@
-#!name=pixiv premium
-#!desc=pixiv premium
+#!name=Pixiv Premium
+#!desc=Pixiv Premium
 
 [Script]
 pixiv = type=http-response,requires-body=1,max-size=0,pattern=^https://oauth\.secure\.pixiv\.net/auth/token,script-path=https://raw.githubusercontent.com/srk24/profile/master/quanx/pixiv.js
