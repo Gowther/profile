@@ -4,13 +4,13 @@
 
 [URL Rewrite]
 # 去除搜索中的内容
-^https?:\/\/app\.bilibili\.com\/x\/v\d\/(search\/(defaultword|square)) - reject
+^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) - reject
 # 去除动态中的话题
-^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
+^https?://api\.vc\.bilibili\.com/topic_svr/v\d/topic_svr - reject
 # 去除动态中的最常访问
-^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
+^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist - reject
 # Others
-^https?:\/\/api\.bilibili\.com\/x\/v\d\/dm\/ad - reject
+^https?://api\.bilibili\.com/x/v\d/dm/ad - reject
 
 [MITM]
 hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
