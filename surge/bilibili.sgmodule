@@ -2,12 +2,12 @@
 #!desc= Remove BiliBili Ads (BiliBili Version:6.2.1)
 #!system=ios
 
-[Rule]
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
-URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
+[URL Rewrite]
+^https?:\/\/app\.bilibili\.com\/x\/v\d\/(search\/(defaultword|square)) - reject
+^https?:\/\/api\.bilibili\.com\/x\/v\d\/dm\/ad - reject
 
 [MITM]
-hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.live.bilibili.com
+hostname = %APPEND% api.bilibili.com, app.bilibili.com
 
 [Script]
 bilibili tab = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/surge%20bilibili%20tab.js
