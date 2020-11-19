@@ -18,7 +18,8 @@
 hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
 
 [Script]
-bilibili tab = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/surge%20bilibili%20tab.js
-bilibili feed = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/feed/index\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
-bilibili account = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/account/mine\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js
-bilibili view = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/view\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js
+bilibili splash = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/splash/list,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_splash.js
+bilibili tab = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_tab.js
+bilibili feed = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/feed/index\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
+bilibili account = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/account/mine\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js
+bilibili view = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/view\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js
