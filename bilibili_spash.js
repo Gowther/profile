@@ -1,3 +1,5 @@
+# 感谢 blackmatrix7 提供灵感来源，但原js过于庞大，所以将此单独拿出来解析
+
 let body = $response.body
 body = JSON.parse(body)
 if (body['data'].hasOwnProperty('max_time') && body['data'].hasOwnProperty('show')) {
