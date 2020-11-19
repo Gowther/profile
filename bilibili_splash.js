@@ -11,6 +11,11 @@ if(body.hasOwnProperty('data')){
         body['data']['show']['etime'] = 1924272000
     }
     body['data']['list'] = new Array()
+//     for (let i = 0; i < body['data']['list'].length; i++) {
+//         body['data']['list'][i]['duration'] = 0;
+//         body['data']['list'][i]['begin_time'] = 1915027200;
+//         body['data']['list'][i]['end_time'] = 1924272000;
+//     }
 }
 body = JSON.stringify(body)
 $done({ body })
