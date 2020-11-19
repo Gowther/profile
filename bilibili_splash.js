@@ -1,4 +1,5 @@
 // 感谢 blackmatrix7 提供灵感来源，但原js过于庞大，所以将此单独拿出来解析
+// 原版地址 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 
 let body = $response.body
 body = JSON.parse(body)
