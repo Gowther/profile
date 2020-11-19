@@ -1,9 +1,7 @@
 # 配置文件
 
-### 主要是存放quantumult x、clash 配置文件
+### 主要是存放quantumult x、clash、surge 配置文件
 
-1. quan x 的ip解析
-2. quan x 的订阅解析
 
 配置：
 
