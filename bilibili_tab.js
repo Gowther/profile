@@ -37,7 +37,7 @@ body['data']['tab'] = [
         "uri": "bilibili://pgc/cinema-tab",
         "tab_id": "影视tab",
         "pos": 5,
-    },
+    }
 ]
 
 body['data']['top'] = [
@@ -70,7 +70,6 @@ body['data']['bottom'] = [
         "tab_id": "动态Bottom",
         "pos": 3
     },
-
     {
         "id": 181,
         "icon": "http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",
