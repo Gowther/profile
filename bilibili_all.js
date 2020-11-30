@@ -40,7 +40,7 @@ if (url.includes('feed/index')) {
                 },
                 {
                     "id": 410,
-                    "title": "设置",
+                    "title": "其他设置",
                     "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png",
                     "uri": "bilibili://user_center/setting"
                 }
