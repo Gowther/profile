@@ -46,6 +46,12 @@ if (url.includes('feed/index')) {
             "title": "创作中心",
             "items": [
                 {
+                    "id": 404,
+                    "title": "我的钱包",
+                    "uri": "bilibili://bilipay/mine_wallet",
+                    "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
+                },
+                   {
                     "need_login": 1,
                     "display": 1,
                     "id": 171,
@@ -53,12 +59,6 @@ if (url.includes('feed/index')) {
                     "global_red_dot": 1,
                     "uri": "bilibili://uper/homevc",
                     "icon": "http://i0.hdslb.com/bfs/archive/d3aad2d07538d2d43805f1fa14a412d7a45cc861.png"
-                },
-                {
-                    "id": 404,
-                    "title": "我的钱包",
-                    "uri": "bilibili://bilipay/mine_wallet",
-                    "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
                 }
             ],
             "style": 1,
