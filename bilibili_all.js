@@ -39,7 +39,7 @@ if (url.includes('feed/index')) {
                     "uri": "bilibili://user_center/watch_later"
                 }
             ],
-            "style": 1,
+            "style": 2,
             "button": {
             }
         },
