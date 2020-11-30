@@ -3,9 +3,8 @@ let body = $response.body
 body = JSON.parse(body)
 
 if (url.includes('feed/index')) {
-    let blacklist = ['徐大sao', '翔翔大作战', '徐大虾咯', '科技美学', '敬汉卿', 'NathanRich火锅大王', '千户长生']
     body['data']['items'].forEach((element, index) => {
-        if (element.hasOwnProperty('ad_info') || element.hasOwnProperty('banner_item') || element['card_type'] != 'small_cover_v2' || blacklist.includes(element['args']['up_name'])) {
+        if (element.hasOwnProperty('ad_info') || element.hasOwnProperty('banner_item') || element['card_type'] != 'small_cover_v2') {
             body['data']['items'].splice(index, 1)
         }
     })
@@ -51,7 +50,7 @@ if (url.includes('feed/index')) {
                     "uri": "bilibili://bilipay/mine_wallet",
                     "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
                 },
-                   {
+                {
                     "need_login": 1,
                     "display": 1,
                     "id": 171,
