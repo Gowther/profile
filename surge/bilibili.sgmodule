@@ -3,15 +3,10 @@
 #!system=ios
 
 [URL Rewrite]
-# 去除搜索中的内容
 ^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) - reject
-# 去除动态中的话题
 ^https?://api\.vc\.bilibili\.com/topic_svr/v\d/topic_svr - reject
-# 去除动态中的最常访问
 ^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist - reject
-# 去除动态中的搜索框 “大家都在搜”
 ^https?://api\.vc\.bilibili\.com/search_svr/v\d/Search/recommend_words - reject
-# Others
 ^https?://api\.bilibili\.com/x/v\d/dm/ad - reject
 
 [MITM]
