@@ -3,12 +3,14 @@
 #!system=ios
 
 [URL Rewrite]
+^https?://app\.bilibili\.com/x/resource/top/activity\?access_key - reject
 ^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) - reject
+^https?://api\.bilibili\.com/x/v\d/dm/ad - reject
 ^https?://api\.vc\.bilibili\.com/topic_svr/v\d/topic_svr - reject
 ^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist - reject
 ^https?://api\.vc\.bilibili\.com/search_svr/v\d/Search/recommend_words - reject
-^https?://api\.bilibili\.com/x/v\d/dm/ad - reject
-^https?://app\.bilibili\.com/x/resource/top/activity\?access_key - reject
+
+
 
 [MITM]
 hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
