@@ -15,7 +15,7 @@ hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
 
 [Script]
 bilibili splash = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/splash/list,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_splash.js
-bilibili tab = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_tab.js
-bilibili feed = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/feed/index\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_feed.js
-bilibili account = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/account/mine\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_mine.js
-bilibili view = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/view\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_view.js
+bilibili tab = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_all.js
+bilibili feed = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/feed/index\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_all.js
+bilibili account = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/account/mine\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_all.js
+bilibili view = type=http-response,requires-body=1,max-size=0,pattern=^https?://app\.bilibili\.com/x/v\d/view\?access_key,script-path=https://raw.githubusercontent.com/srk24/profile/master/bilibili_all.js
