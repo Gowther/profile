@@ -14,40 +14,52 @@ if (url.includes('feed/index')) {
         {
             "items": [
                 {
+                    "id": 396,
+                    "title": "离线缓存",
+                    "uri": "bilibili://user_center/download",
+                    "icon": "http://i0.hdslb.com/bfs/archive/5fc84565ab73e716d20cd2f65e0e1de9495d56f8.png"
+                },
+                {
                     "id": 397,
                     "title": "历史记录",
-                    "icon": "http://i0.hdslb.com/bfs/archive/8385323c6acde52e9cd52514ae13c8b9481c1a16.png",
-                    "uri": "bilibili://user_center/history"
+                    "uri": "bilibili://user_center/history",
+                    "icon": "http://i0.hdslb.com/bfs/archive/8385323c6acde52e9cd52514ae13c8b9481c1a16.png"
                 },
                 {
                     "id": 398,
                     "title": "我的收藏",
-                    "icon": "http://i0.hdslb.com/bfs/archive/d79b19d983067a1b91614e830a7100c05204a821.png",
-                    "uri": "bilibili://user_center/favourite"
-                },
-                {
-                    "id": 396,
-                    "title": "离线缓存",
-                    "icon": "http://i0.hdslb.com/bfs/archive/5fc84565ab73e716d20cd2f65e0e1de9495d56f8.png",
-                    "uri": "bilibili://user_center/download"
+                    "uri": "bilibili://user_center/favourite",
+                    "icon": "http://i0.hdslb.com/bfs/archive/d79b19d983067a1b91614e830a7100c05204a821.png"
                 },
                 {
                     "id": 399,
                     "title": "稍后再看",
+                    "uri": "bilibili://user_center/watch_later",
                     "icon": "http://i0.hdslb.com/bfs/archive/63bb768caa02a68cb566a838f6f2415f0d1d02d6.png",
-                    "need_login": 1,
-                    "uri": "bilibili://user_center/watch_later"
+                    "need_login": 1
+                }
+            ],
+            "style": 1,
+            "button": {}
+        },
+        {
+            "title": "更多服务",
+            "items": [
+                {
+                    "id": 404,
+                    "title": "我的钱包",
+                    "uri": "bilibili://bilipay/mine_wallet",
+                    "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
                 },
                 {
                     "id": 410,
-                    "title": "其他设置",
-                    "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png",
-                    "uri": "bilibili://user_center/setting"
+                    "title": "设置",
+                    "uri": "bilibili://user_center/setting",
+                    "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png"
                 }
             ],
             "style": 2,
-            "button": {
-            }
+            "button": {}
         }
     ]
 
