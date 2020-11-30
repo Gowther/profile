@@ -10,8 +10,6 @@
 ^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist - reject
 ^https?://api\.vc\.bilibili\.com/search_svr/v\d/Search/recommend_words - reject
 
-
-
 [MITM]
 hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
 
