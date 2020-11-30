@@ -36,7 +36,7 @@ body['data']['tab'] = [
         "name": "影视",
         "uri": "bilibili://pgc/cinema-tab",
         "tab_id": "影视tab",
-        "pos": 5,
+        "pos": 5
     }
 ]
 
@@ -68,7 +68,7 @@ body['data']['bottom'] = [
         "name": "动态",
         "uri": "bilibili://following/home/",
         "tab_id": "动态Bottom",
-        "pos": 3
+        "pos": 2
     },
     {
         "id": 181,
@@ -77,7 +77,7 @@ body['data']['bottom'] = [
         "name": "我的",
         "uri": "bilibili://user_center/",
         "tab_id": "我的Bottom",
-        "pos": 4
+        "pos": 3
     }
 ]
 
