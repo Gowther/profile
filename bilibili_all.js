@@ -37,15 +37,7 @@ if (url.includes('feed/index')) {
                     "icon": "http://i0.hdslb.com/bfs/archive/63bb768caa02a68cb566a838f6f2415f0d1d02d6.png",
                     "need_login": 1,
                     "uri": "bilibili://user_center/watch_later"
-                }
-            ],
-            "style": 2,
-            "button": {
-            }
-        },
-        {
-            //"title": "其他设置",
-            "items": [
+                },
                 {
                     "id": 410,
                     "title": "设置",
