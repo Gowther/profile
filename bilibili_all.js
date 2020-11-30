@@ -43,19 +43,39 @@ if (url.includes('feed/index')) {
             "button": {}
         },
         {
-            "title": "更多服务",
+            "title": "创作中心",
             "items": [
+                {
+                    "need_login": 1,
+                    "display": 1,
+                    "id": 171,
+                    "title": "创作首页",
+                    "global_red_dot": 1,
+                    "uri": "bilibili://uper/homevc",
+                    "icon": "http://i0.hdslb.com/bfs/archive/d3aad2d07538d2d43805f1fa14a412d7a45cc861.png"
+                },
                 {
                     "id": 404,
                     "title": "我的钱包",
                     "uri": "bilibili://bilipay/mine_wallet",
                     "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
-                },
+                }
+            ],
+            "style": 1,
+            "button": {
+                "icon": "http://i0.hdslb.com/bfs/archive/205f47675eaaca7912111e0e9b1ac94cb985901f.png",
+                "style": 1,
+                "url": "bilibili://uper/user_center/archive_selection",
+                "text": "发布"
+            }
+        },
+        {
+            "items": [
                 {
                     "id": 410,
                     "title": "设置",
-                    "uri": "bilibili://user_center/setting",
-                    "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png"
+                    "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png",
+                    "uri": "bilibili://user_center/setting"
                 }
             ],
             "style": 2,
