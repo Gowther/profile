@@ -1,4 +1,4 @@
-let url = $request.url
+const url = $request.url
 let body = $response.body
 body = JSON.parse(body)
 
