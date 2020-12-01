@@ -17,7 +17,7 @@ if ($resource.link === adv) {
             break
         }
     }
-    $notify(title, subtitle, startIndex + '' + endIndex)
+    $notify(title, subtitle, startIndex + '就算是间隔福报' + endIndex)
     list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
