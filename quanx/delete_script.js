@@ -3,6 +3,7 @@
 const adv = 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf'
 
 if ($resource.link === adv) {
+    $notify('1', 'sub', 'demo')
     const regex = /# Script.*# URL Rewrite$/g
     let resp = $resource.content
     resp = content.replace(regex, '# URL Rewrite')
