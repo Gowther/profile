@@ -5,7 +5,7 @@
 
 const adv = 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf'
 
-const adv = 'qweqweqweqweqweqweqw'
+const bba = 'qweqweqweqweqweqweqw'
 
 let list = $resource.content.split(/\n/g)
 
