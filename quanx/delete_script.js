@@ -16,6 +16,7 @@ if ($resource.link === adv) {
             break
         }
     }
+    $notify('1', '', startIndex + ',' + endIndex)
     list = list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
