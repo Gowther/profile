@@ -8,11 +8,11 @@ if ($resource.link === adv) {
     let startIndex
     let endIndex
     for (let i = 0; i < list.length; i++) {
-        $notify('删除的内容', '', list[i])
         if (list[i].includes('# Script')) {
             startIndex = i
-            $notify('匹配到的东西', '', list[i])
+            $notify('匹配startIndex到的东西', '', list[i])
         } else if (list[i].includes('# URL Rewrite')) {
+            $notify('匹配endIndex到的东西', '', list[i])
             endIndex = i
             break
         }
