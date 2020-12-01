@@ -5,6 +5,8 @@
 
 const adv = 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf'
 
+const adv = 'qweqweqweqweqweqweqw'
+
 let list = $resource.content.split(/\n/g)
 
 if ($resource.link === adv) {
@@ -18,7 +20,7 @@ if ($resource.link === adv) {
             break
         }
     }
-    $notify('1', 'sub', startIndex+ ','+endIndex)
+    $notify('1', '', startIndex + ',' + endIndex)
     list = list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
