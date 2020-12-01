@@ -10,14 +10,12 @@ if ($resource.link === adv) {
     for (let i = 0; i < list.length; i++) {
         if (list[i].includes('# Script')) {
             startIndex = i
-            $notify('匹配startIndex到的东西', '', list[i])
         } else if (list[i].includes('# URL Rewrite')) {
-            $notify('匹配endIndex到的东西', '', list[i])
             endIndex = i
             break
         }
     }
-    $notify(title, subtitle, startIndex + '就算是间隔福报' + endIndex)
+    $notify('', '', startIndex + '就算是间隔福报' + endIndex)
     list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
