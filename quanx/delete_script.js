@@ -8,13 +8,16 @@ if ($resource.link === adv) {
     let startIndex
     let endIndex
     for (let i = 0; i < list.length; i++) {
+        $notify('删除的内容', '', list[i])
         if (list[i].includes('# Script')) {
             startIndex = i
+            $notify('匹配到的东西', '', list[i])
         } else if (list[i].includes('# Rewrite')) {
             endIndex = i
             break
         }
     }
+    $notify(title, subtitle, startIndex + '' + endIndex)
     list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
