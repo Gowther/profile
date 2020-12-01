@@ -12,7 +12,7 @@ if ($resource.link === adv) {
         if (list[i].includes('# Script')) {
             startIndex = i
             $notify('匹配到的东西', '', list[i])
-        } else if (list[i].includes('# Rewrite')) {
+        } else if (list[i].includes('# URL Rewrite')) {
             endIndex = i
             break
         }
