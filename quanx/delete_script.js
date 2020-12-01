@@ -8,7 +8,6 @@ const adv = 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quan
 let list = $resource.content.split(/\n/g)
 
 if ($resource.link === adv) {
-    $notify('1', 'sub', 'demo')
     let startIndex
     let endIndex
     for (let i = 0; i < list.length; i++) {
@@ -19,6 +18,7 @@ if ($resource.link === adv) {
             break
         }
     }
+    $notify('1', 'sub', startIndex+ ','+endIndex)
     list = list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
