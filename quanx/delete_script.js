@@ -14,7 +14,7 @@ if ($resource.link === adv) {
             break
         }
     }
-    $notify('', '', startIndex + '就算是间隔福报' + endIndex)
+//     $notify('开始删除script', '', '开始位置：' + list[startIndex] + '；结束位置：' + list[endIndex])
     list.splice(startIndex, (endIndex - startIndex));
     let resp = list.join('\n')
     $done({ content: resp })
