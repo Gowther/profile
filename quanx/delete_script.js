@@ -1,5 +1,4 @@
-// 删除 DivineEngine Rule 中的script的资源解析器
-
+//资源解析器 -> 删除 DivineEngine Rule Script的引用 
 const adv = 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf'
 
 let list = $resource.content.split(/\n/g)
