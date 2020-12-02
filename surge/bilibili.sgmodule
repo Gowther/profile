@@ -6,6 +6,7 @@
 ^https?://app\.bilibili\.com/x/resource/top/activity\?access_key - reject
 ^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) - reject
 ^https?://api\.bilibili\.com/x/v\d/dm/ad - reject
+
 [MITM]
 hostname = %APPEND% api.bilibili.com, app.bilibili.com
 
