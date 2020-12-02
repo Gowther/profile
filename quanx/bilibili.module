@@ -1,4 +1,4 @@
-hostname = %APPEND% api.bilibili.com, app.bilibili.com
+hostname = api.bilibili.com, app.bilibili.com
 
 # rewrite
 ^https?://app\.bilibili\.com/x/resource/top/activity\?access_key url reject-200
