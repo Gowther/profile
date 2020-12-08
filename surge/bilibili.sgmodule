@@ -1,5 +1,5 @@
-#!name= Remove BiliBili Ads
-#!desc= Remove BiliBili Ads @onewayticket255 @blackmatrix7
+#!name= Block BiliBili Ads
+#!desc= Block BiliBili Ads @onewayticket255 @blackmatrix7
 #!system=ios
 
 [URL Rewrite]
