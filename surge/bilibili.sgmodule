@@ -1,6 +1,7 @@
-#!name= Block BiliBili Ads
-#!desc= Block BiliBili Ads @onewayticket255 @blackmatrix7
+#!name= Block Advertising Bilibili
+#!desc= Block Advertising for Bilibili
 #!system=ios
+# Special thanks to @onewayticket255 @blackmatrix7
 
 [URL Rewrite]
 ^https?://app\.bilibili\.com/x/resource/top/activity\?access_key - reject
