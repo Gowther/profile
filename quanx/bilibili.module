@@ -5,7 +5,7 @@ hostname = api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
 ^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) url reject-200
 ^https?://api\.bilibili\.com/x/v\d/dm/ad url reject-200
 ^https?://api\.vc\.bilibili\.com/topic_svr/v\d/topic_svr url reject-200
-^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist url reject-200
+#^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr/mix_uplist url reject-200
 
 # script
 ^https?://app\.bilibili\.com/x/v\d/splash/list url script-response-body https://raw.githubusercontent.com/srk24/profile/master/bilibili_splash.js
