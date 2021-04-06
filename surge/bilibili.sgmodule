@@ -4,11 +4,18 @@
 # Special thanks to @onewayticket255 @blackmatrix7
 
 [URL Rewrite]
-^https?://app\.bilibili\.com/x/resource/top/activity\?access_key - reject
+# 首页搜索的关键词
 ^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) - reject
 ^https?://api\.bilibili\.com/x/v\d/dm/ad - reject
+# 动态搜索的大家都在搜
+^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
+# 动态中的最常访问
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
+# 动态中的话题
 ^https?://api\.vc\.bilibili\.com/topic_svr/v\d/topic_svr - reject
-#^https?://api\.vc\.bilibili\.com/dynamic_svr/v\d/dynamic_svr\/mix_uplist - reject
+^https?://app\.bilibili\.com/x/resource/top/activity\?access_key - reject
+# Others
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
 
 [MITM]
 hostname = %APPEND% api.bilibili.com, app.bilibili.com, api.vc.bilibili.com
