@@ -1,0 +1,24 @@
+payload:
+  # Origin
+  - PROCESS-NAME,EAProxyInstaller.exe,DIRECT
+  - PROCESS-NAME,GetGameToken32.exe,DIRECT
+  - PROCESS-NAME,GetGameToken64.exe,DIRECT
+  - PROCESS-NAME,igoproxy.exe,DIRECT
+  - PROCESS-NAME,igoproxy64.exe,DIRECT
+  - PROCESS-NAME,EACoreServer.exe,DIRECT
+  - PROCESS-NAME,Login.exe,DIRECT
+  - PROCESS-NAME,MessageDlg.exe,DIRECT
+  - PROCESS-NAME,OriginLegacyCLI.exe,DIRECT
+  - PROCESS-NAME,OriginUninstall.exe,DIRECT
+  - PROCESS-NAME,PatchProgress.exe,DIRECT
+  - PROCESS-NAME,Origin.exe,DIRECT
+  - PROCESS-NAME,OriginClientService.exe,DIRECT
+  - PROCESS-NAME,OriginCrashReporter.exe,DIRECT
+  - PROCESS-NAME,OriginER.exe,DIRECT
+  - PROCESS-NAME,OriginThinSetupInternal.exe,DIRECT
+  - PROCESS-NAME,OriginWebHelperService.exe,DIRECT
+  - PROCESS-NAME,QtWebEngineProcess.exe,DIRECT
+  - PROCESS-NAME,UpdateTool.exe,DIRECT
+  
+  #APEX
+  
