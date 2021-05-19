@@ -1,0 +1,10 @@
+#!name= Block Advertising Bilibili
+#!desc= Block Advertising for Bilibili
+#!system=ios
+# Developed by Hackl0us (https://github.com/hackl0us)
+
+[MITM]
+hostname = weather-data.apple.com
+
+[Script]
+AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=iOS_Weather_AQI_Standard.js
