@@ -42,7 +42,6 @@ if (url.includes('feed/index')) {
             "button": {}
         },
         {
-            "title": "创作中心",
             "items": [
                 {
                     "id": 404,
@@ -50,26 +49,6 @@ if (url.includes('feed/index')) {
                     "uri": "bilibili://bilipay/mine_wallet",
                     "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
                 },
-                {
-                    "need_login": 1,
-                    "display": 1,
-                    "id": 171,
-                    "title": "创作首页",
-                    "global_red_dot": 1,
-                    "uri": "bilibili://uper/homevc",
-                    "icon": "http://i0.hdslb.com/bfs/archive/d3aad2d07538d2d43805f1fa14a412d7a45cc861.png"
-                }
-            ],
-            "style": 1,
-            "button": {
-                "icon": "http://i0.hdslb.com/bfs/archive/205f47675eaaca7912111e0e9b1ac94cb985901f.png",
-                "style": 1,
-                "url": "bilibili://uper/user_center/archive_selection",
-                "text": "发布"
-            }
-        },
-        {
-            "items": [
                 {
                     "id": 410,
                     "title": "设置",
@@ -151,15 +130,17 @@ if (url.includes('feed/index')) {
             "uri": "bilibili://following/home/",
             "tab_id": "动态Bottom",
             "pos": 2
+        },
+        {
+            "id": 181,
+            "icon": "http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",
+            "icon_selected": "http://i0.hdslb.com/bfs/archive/a54a8009116cb896e64ef14dcf50e5cade401e00.png",
+            "name": "我的",
+            "uri": "bilibili://user_center/",
+            "tab_id": "我的Bottom",
+            "pos": 3
         }
     ]
-} else if (url.includes('view')) {
-    body['data']['relates'].forEach((element, index) => {
-        if (element.hasOwnProperty('is_ad') || !element.hasOwnProperty('aid')) {
-            body['data']['relates'].splice(index, 1)
-        }
-    })
-    delete body['data']['cms']
 }
 
 body = JSON.stringify(body)
