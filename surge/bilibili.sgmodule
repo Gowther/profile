@@ -4,7 +4,7 @@
 # Special thanks to @onewayticket255 @blackmatrix7
 
 [Rule]
-URL-REGEX,^https:\/\/app\.bilibili\.com\/x\/v2\/search,REJECT-TINYGIF
+URL-REGEX,^https:\/\/app\.bilibili\.com\/x\/v2\/(search\/(defaultwords|square)),REJECT
 
 [MITM]
 hostname = %APPEND% app.bilibili.com
