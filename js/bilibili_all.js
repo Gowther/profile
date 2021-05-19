@@ -129,7 +129,7 @@ if (url.includes('feed/index')) {
             "name": "消息",
             "uri": "bilibili://link/im_home",
             "tab_id": "消息Top",
-            "pos": 1
+            "pos": 2
         }
     ]
 
@@ -151,15 +151,6 @@ if (url.includes('feed/index')) {
             "uri": "bilibili://following/home/",
             "tab_id": "动态Bottom",
             "pos": 2
-        },
-        {
-            "id": 181,
-            "icon": "http://i0.hdslb.com/bfs/archive/4b0b2c49ffeb4f0c2e6a4cceebeef0aab1c53fe1.png",
-            "icon_selected": "http://i0.hdslb.com/bfs/archive/a54a8009116cb896e64ef14dcf50e5cade401e00.png",
-            "name": "我的",
-            "uri": "bilibili://user_center/",
-            "tab_id": "我的Bottom",
-            "pos": 3
         }
     ]
 } else if (url.includes('view')) {
