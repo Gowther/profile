@@ -5,8 +5,8 @@
 
 [URL Rewrite]
 # 首页搜索 关键词
-^https?://app\.bilibili\.com/x/v\d/(search/(defaultword|square)) reject
-^https?://api\.bilibili\.com/x/v\d/dm/ad reject
+^https?://app\.bilibili\.com/x/v2/search\?access_key reject
+^https?://api\.bilibili\.com/x/v2/dm/ad reject
 # 动态搜索的大家都在搜
 ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words reject
 # 动态中的最常访问
