@@ -44,12 +44,6 @@ if (url.includes('feed/index')) {
         {
             "items": [
                 {
-                    "id": 404,
-                    "title": "我的钱包",
-                    "uri": "bilibili://bilipay/mine_wallet",
-                    "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png"
-                },
-                {
                     "id": 410,
                     "title": "设置",
                     "icon": "http://i0.hdslb.com/bfs/archive/e932404f2ee62e075a772920019e9fbdb4b5656a.png",
