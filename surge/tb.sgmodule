@@ -7,5 +7,5 @@
 hostname = %APPEND% trade-acs.m.taobao.com
 
 [Script]
-price history = type=http-request,pattern=^http://.+/amdc/mobileDispatch script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
-price history = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,max-size=0,requires-body=true
+price history = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
+price history = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,,script-update-interval=0
