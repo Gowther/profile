@@ -9,4 +9,4 @@
 hostname = %APPEND% api.m.jd.com
 
 [Script]
-price history = type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,max-size=0,requires-body=true
+price history = type=http-response,pattern=^https://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
