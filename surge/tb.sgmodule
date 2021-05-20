@@ -4,7 +4,7 @@
 # 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
 
 [MITM]
-hostname = trade-acs.m.taobao.com
+hostname = %APPEND% trade-acs.m.taobao.com
 
 [Script]
 price history = type=http-request,pattern=^http://.+/amdc/mobileDispatch script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
