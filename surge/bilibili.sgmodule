@@ -1,5 +1,5 @@
-#!name= Block Advertising Bilibili
-#!desc= Block Advertising for Bilibili
+#!name= Block Bilibili Advertising
+#!desc= 去除B站客户端启动广告、首页流广告，调整其UI
 #!system=ios
 # Special thanks to @onewayticket255 @blackmatrix7
 
