@@ -12,4 +12,4 @@ geo_location_checker=http://ip-api.com/json, https://raw.githubusercontent.com/s
 
 -----
 ## TODO
-- [ ] bilibili 动态里面的广告 
+- [X] bilibili 动态里面的广告 
