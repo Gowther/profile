@@ -7,3 +7,4 @@ payload:
   - PROCESS-NAME,EasyAntiCheat_launcher.exe,DIRECT
   - PROCESS-NAME,MiniThunderPlatform.exe,DIRECT
   - PROCESS-NAME,qbittorrent.exe,DIRECT
+  - PROCESS-NAME,NarakaBladepoint.exe,DIRECT
