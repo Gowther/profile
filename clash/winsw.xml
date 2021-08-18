@@ -1,5 +1,6 @@
 <service>
   <id>ClashSvc</id>
+  <name>Clash Service</name>
   <description>Clash daemon, A rule-based proxy in Go.</description>
   <executable>./bin/clash-windows-amd64.exe</executable>
   <arguments>-d ./bin -f ./config.yaml</arguments>
