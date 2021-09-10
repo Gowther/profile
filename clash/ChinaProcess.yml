@@ -1,10 +1,6 @@
 payload:
   - PROCESS-NAME,QiYou.exe,DIRECT
   - PROCESS-NAME,QiYouDaemon.exe,DIRECT
-  - PROCESS-NAME,r5apex.exe,DIRECT
-  - PROCESS-NAME,crashmsg.exe,DIRECT
-  - PROCESS-NAME,EasyAntiCheat_Setup.exe,DIRECT
-  - PROCESS-NAME,EasyAntiCheat_launcher.exe,DIRECT
   - PROCESS-NAME,MiniThunderPlatform.exe,DIRECT
   - PROCESS-NAME,qbittorrent.exe,DIRECT
   - PROCESS-NAME,NarakaBladepoint.exe,DIRECT
